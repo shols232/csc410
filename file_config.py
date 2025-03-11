@@ -1,13 +1,13 @@
 # config.py
 node_mapping = {
     "grp6employees": {
-        "host": "192.168.0.144",
+        "host": "server1_ip",
         "user": "grp6user",
         "password": "grp6password",
         "database": "grp6employee"
     },
     "grp6departments": {
-        "host": "192.168.0.128",
+        "host": "server2_ip",
         "user": "grp6user",
         "password": "grp6password",
         "database": "grp6employee"

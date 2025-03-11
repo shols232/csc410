@@ -1,5 +1,4 @@
 -- Drop any existing database and re-create it.
-DROP DATABASE IF EXISTS grp6employee;
 CREATE DATABASE IF NOT EXISTS grp6employee;
 USE grp6employee;
 
