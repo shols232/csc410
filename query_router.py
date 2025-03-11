@@ -17,12 +17,10 @@ def route_query(query):
 
     conn_params = node_mapping[target]
     try:
-        # Use a buffered cursor to ensure that results are fully fetched.
         connection = mysql.connector.connect(**conn_params)
         cursor = connection.cursor(buffered=True)
         cursor.execute(query)
         
-        # For SELECT queries, fetch and display all results.
         if query.strip().upper().startswith("SELECT"):
             results = cursor.fetchall()
             if results:
@@ -32,7 +30,6 @@ def route_query(query):
             else:
                 print("DEBUG: route_query - Query executed successfully, but no rows returned.")
         else:
-            # For non-SELECT queries, print the number of affected rows.
             print(f"DEBUG: route_query - Query executed successfully. Rows affected: {cursor.rowcount}")
         
         connection.commit()
