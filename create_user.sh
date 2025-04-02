@@ -1,7 +1,7 @@
 #!/bin/bash
 # create_user.sh - Creates a dedicated MySQL user for the grp6employee database.
 
-MYSQL_BIN="/usr/local/mysql/bin/mysql"
+MYSQL_BIN="/usr/local/mysql/bin/mysql" # might need to be modified.
 
 if [ ! -x "$MYSQL_BIN" ]; then
     echo "Error: MySQL client not found at $MYSQL_BIN."

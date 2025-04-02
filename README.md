@@ -60,6 +60,7 @@ CREATE TABLE grp6departments (
 );
 ```
 
+
 ### Server 3 – grp6salaries Table:
 ```sql
 DROP DATABASE IF EXISTS grp6employee;
@@ -75,6 +76,7 @@ CREATE TABLE grp6salaries (
     PRIMARY KEY (emp_no, from_date)
 );
 ```
+Alternatively, we can use `mysql -u username -p < /path/to/sql/file` to load the data`
 
 ## How to Run
 ```bash
